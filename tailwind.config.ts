@@ -15,13 +15,24 @@ export default {
     extend: {
       colors: {
         border: "hsl(var(--border))",
+        "border-soft": "hsl(var(--border-soft))",
+        "border-subtle": "hsl(var(--border-subtle))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
+        background: {
+          DEFAULT: "hsl(var(--background))",
+          light: "hsl(var(--background-light))",
+          pale: "hsl(var(--background-pale))",
+          neutral: "hsl(var(--background-neutral))",
+          subtle: "hsl(var(--background-subtle))",
+          mist: "hsl(var(--background-mist))",
+        },
         foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          light: "hsl(var(--primary-light))",
+          alert: "hsl(var(--primary-alert))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
